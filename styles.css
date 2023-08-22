@@ -1,0 +1,289 @@
+/* Estilos base para todos los dispositivos */
+body {
+  font-size: 16px;
+}
+
+/* Media query para pantallas pequeñas (celulares) */
+@media (max-width: 767px) {
+  /* Ajustar tamaño de fuente */
+  body {
+    font-size: 14px;
+  }
+
+  /* Ajustar tamaño de imágenes */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Ajustar el espaciado */
+  .container {
+    padding: 10px;
+  }
+
+  /* Reorganizar elementos o ajustar su tamaño si es necesario */
+}
+
+/* Media query para pantallas medianas (tablets) */
+@media (min-width: 768px) {
+  /* Ajustar tamaño de fuente */
+  body {
+    font-size: 18px;
+  }
+
+  /* Ajustar tamaño de imágenes */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Ajustar el espaciado */
+  .container {
+    padding: 20px;
+  }
+}
+
+/* Media query para pantallas grandes (computadoras) */
+@media (min-width: 1024px) {
+  /* Ajustar tamaño de fuente */
+  body {
+    font-size: 20px;
+  }
+
+  /* Ajustar tamaño de imágenes */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Ajustar el espaciado */
+  .container {
+    padding: 30px;
+  }
+}
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f6fff1;
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-image: url("fondddd.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  background-color: rgba(142, 235, 181, 0.63);
+  padding: 30px;
+  margin-top: 10px;
+}
+
+/* Barra de navegación */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+align-content: center;
+  background-color: rgba(175, 211, 191, 0.521);
+  text-align: center;
+  margin-top: 10px;
+}
+
+nav li {
+  display: inline-block;
+  padding: 10px;
+}
+
+nav li a {
+  display: block;
+  text-decoration: none;
+  color: #5c677d;
+  font-family: "Times New Roman", serif;
+ 
+}
+
+nav li a:hover {
+  background-color: #5c677d;
+  color: #fff;
+  padding: 5px;
+}
+
+/* Contenido principal */
+main {
+ padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+h2 {
+  color: #5c677d;
+}
+
+p {
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+li a {
+  text-decoration: none;
+  color: #9e7b6a;
+  font-weight: bold;
+}
+
+li a:hover {
+  color: #5c677d;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  background-color: #dfe0da;
+  padding: 1px;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+  height: 50px;
+  z-index: 1;
+}
+
+/* Estilos para la página de cursos */
+
+
+body.cursos p {
+  font-size: 20px;
+  color: #0c0e0c;
+  line-height: 1.5;
+  background-color: #e2f8aab0;
+  padding: 1px;
+}
+
+/* Estilos para la lista de cursos */
+body.cursos ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+li {
+  border-radius: 5px;
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+li p {
+  margin-bottom: 5px;
+}
+
+li:not(:last-child) {
+  margin-right: 10px;
+}
+
+li a {
+  text-decoration: none;
+  color: #9e7b6a;
+  font-weight: bold;
+}
+
+li a:hover {
+  color: #5c677d;
+}
+
+/* Estilos para la sección de misión */
+.mision div {
+  width: 100%;
+  padding: 10px;
+}
+
+.mision {
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+}
+
+.mujeres,
+.emprendedoras {
+  width: 400px;
+  height: auto;
+  margin: 10px;
+  margin-left: 210px;
+}
+
+/* Estilos para el formulario */
+section#formulario {
+  background-color: #f9f7f3;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #5c677d;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+input[type="submit"] {
+  background-color: #5c677d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 12px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #405570;
+}
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f6fff1;
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-image: url("fondddd.jpg");
+  background-size: cover;
+  background-position: center;
+}
+/* Estilos para el texto con fondo transparente */
+.texto-con-fondo {
+  background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con 50% de opacidad */
+  color: #ffffff; /* Color del texto blanco */
+  padding: 10px; /* Espaciado interno para mejorar la legibilidad */
+}

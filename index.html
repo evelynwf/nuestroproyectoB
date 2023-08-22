@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+    <link rel="icon" type="image/png" href="Emprendedores.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>página web emprendedoras</title>
+    <link rel="stylesheet" href="style.css">
+  
+  </head>
+  <body>
+    
+  
+    <div class="container">
+      <!-- Contenido de la página -->
+    <header>
+      <div class="logo">
+        <img src="Emprendedores.png" alt="Logo de la página">
+      </div>
+      <h1>Bienvenido a la pagina web de emprendedores</h1>
+    </header>
+  
+    <nav>
+      <ul>
+        <li><a href="linksImportantes.html">links importantes </a></li>  <!-- ya esta, solo hay que seguir editando - jor -->
+        <li><a href="acercaDe.html">Acerca de</a></li> <!-- emi -->
+        <li><a href="novedades.html">novedades</a></li> <!-- jor, ya esta hecho -->
+        <li><a href="financiamiento.html">financiamiento</a></li><!-- lucila --> 
+        <li><a href="cursos.html">cursos</a></li> <!-- evelyn --> 
+  
+      </ul>
+    </nav>
+  <!-- agregar un formulario de contacto para los emprendedores  --> 
+    <main >
+      <h2>Emprendedores Neuquinos </h2>
+      <p class="texinicio">¡Hola! Somos el grupo B. Somos 4 jóvenes apasionadas emprendedoras de distintos rubros unidas
+        para brindarles un espacio dedicado a las emprendedoras. Creemos en el poder de la colaboración 
+        y la solidaridad para alcanzar el éxito y nos enorgullecemos de ser una comunidad inclusiva y de 
+        apoyo, donde mujeres emprendedoras de diversos sectores y trayectorias pueden conectarse, compartir
+         experiencias y aprender juntas. ¡Gracias por formar parte de Grupo B!</p>
+      
+      <!-- agregar informacion sobre la mision de la pagina  --> 
+      <h4>aqui abajo les dejamos un formulario en caso de que quieran ponerse en contacto.</h4>
+      <section id="formulario">
+        <h2>Formulario de Contacto</h2>
+        <form action="procesar_formulario.php" method="POST">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+
+          <input type="submit" value="Enviar">
+        </form>
+      </section>
+    </main>
+  
+    <footer>
+      <p>Derechos de autor &copy; 2023 grupo B</p>
+      <!-- agregar iconos de redes sociales  --> 
+    </footer>
+  </body>
+ 
+  
+</html>
