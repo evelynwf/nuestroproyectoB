@@ -8,7 +8,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>página web emprendedoras</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+      function validarFormulario() {
+          var nombre = document.forms["contactForm"]["nombre"].value;
+          var email = document.forms["contactForm"]["email"].value;
+          var mensaje = document.forms["contactForm"]["mensaje"].value;
   
+          var nombreValido = /^[a-zA-Z\s]+$/.test(nombre);
+          var emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  
+          if (!nombreValido) {
+              alert("Por favor, ingresa un nombre válido.");
+              return false;
+          }
+  
+          if (!emailValido) {
+              alert("Por favor, ingresa un correo electrónico válido.");
+              return false;
+          }
+  
+          if (mensaje.length > 300) {
+              alert("El mensaje no puede exceder los 300 caracteres.");
+              return false;
+          }
+  
+          return true;
+      }
+  </script>
   </head>
   <body>
     
