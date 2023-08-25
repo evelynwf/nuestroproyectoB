@@ -282,3 +282,6 @@ padding: 10px;
   max-height: 20px;
 
   }
+  .error {
+    color: red;
+}
