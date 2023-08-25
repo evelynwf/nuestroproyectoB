@@ -10,29 +10,38 @@
     <link rel="stylesheet" href="style.css">
     <script>
       function validarFormulario() {
-          var nombre = document.forms["contactForm"]["nombre"].value;
-          var email = document.forms["contactForm"]["email"].value;
-          var mensaje = document.forms["contactForm"]["mensaje"].value;
+          var nombre = document.getElementById("nombre").value;
+          var email = document.getElementById("email").value;
+          var mensaje = document.getElementById("mensaje").value;
   
-          var nombreValido = /^[a-zA-Z\s]+$+1/.test(nombre);
-          var emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  
-          if (!nombreValido) {
-              alert("Por favor, ingresa un nombre válido.");
+          if (!validarNombre(nombre)) {
+              alert("El nombre no es válido. Debe contener solo letras y espacios, hasta 50 caracteres.");
               return false;
           }
   
-          if (!emailValido) {
-              alert("Por favor, ingresa un correo electrónico válido.");
+          if (!validarEmail(email)) {
+              alert("El correo electrónico no es válido.");
               return false;
           }
   
-          if (mensaje.length > 300) {
-              alert("El mensaje no puede exceder los 300 caracteres.");
+          if (!validarMensaje(mensaje)) {
+              alert("El mensaje no es válido. Debe tener máximo 300 caracteres.");
               return false;
           }
   
           return true;
+      }
+  
+      function validarNombre(nombre) {
+          return /^[a-zA-Z\s]{1,50}$/.test(nombre);
+      }
+  
+      function validarEmail(email) {
+          return /^[A-Za-z0-9+_.-]+@(.+)$/.test(email);
+      }
+  
+      function validarMensaje(mensaje) {
+          return mensaje.length <= 300;
       }
   </script>
   </head>
