@@ -126,6 +126,7 @@ section#formulario {
     padding: 20px;
     border-radius: 8px;
     margin: 10px;
+    align-content: center;
   }
   
   label {
