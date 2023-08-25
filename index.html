@@ -14,7 +14,7 @@
           var email = document.forms["contactForm"]["email"].value;
           var mensaje = document.forms["contactForm"]["mensaje"].value;
   
-          var nombreValido = /^[a-zA-Z\s]+$/.test(nombre);
+          var nombreValido = /^[a-zA-Z\s]+$+1/.test(nombre);
           var emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   
           if (!nombreValido) {
