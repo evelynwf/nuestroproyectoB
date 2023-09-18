@@ -323,6 +323,6 @@ padding: 10px;
   .error {
     color: red;
 }
-.linksImportantes{
-  margin: 10px;
+.linksImportantes li{
+ margin: 20px;
 }
