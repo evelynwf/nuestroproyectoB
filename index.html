@@ -1,51 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
   <head>
+=======
+<head>
+    <link rel="icon" type="image/png" href="Emprendedores.png">
+>>>>>>> ec9aeb6c64e5ae92a8fc672429c36a9df51e8a6b
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>página web emprendedoras</title>
-<<<<<<< HEAD
-    <link rel="stylesheet" href="styles.css">
-=======
-    <link rel="stylesheet" href="style.css">
-    <script>
+
+    <link rel="stylesheet" href="styles.css"
+
       function validarFormulario() {
           var nombre = document.getElementById("nombre").value;
           var email = document.getElementById("email").value;
           var mensaje = document.getElementById("mensaje").value;
->>>>>>> 59c4513683b7401be4569bba8587272d1c2bae9f
-  
-          if (!validarNombre(nombre)) {
-              alert("El nombre no es válido. Debe contener solo letras y espacios, hasta 50 caracteres.");
-              return false;
-          }
-  
-          if (!validarEmail(email)) {
-              alert("El correo electrónico no es válido.");
-              return false;
-          }
-  
-          if (!validarMensaje(mensaje)) {
-              alert("El mensaje no es válido. Debe tener máximo 300 caracteres.");
-              return false;
-          }
-  
-          return true;
       }
-  
-      function validarNombre(nombre) {
-          return /^[a-zA-Z\s]{1,50}$/.test(nombre);
-      }
-  
-      function validarEmail(email) {
-          return /^[A-Za-z0-9+_.-]+@(.+)$/.test(email);
-      }
-  
-      function validarMensaje(mensaje) {
-          return mensaje.length <= 300;
-      }
-  </script>
-  </head>
   <body>
     <div class="container">
       <!-- Contenido de la página -->

@@ -272,6 +272,8 @@ padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 5px;
+    margin: 25px;
   }
   
   li img {
@@ -322,4 +324,8 @@ padding: 10px;
   }
   .error {
     color: red;
+}
+.linksImportantes li{
+ margin: 20px;
+ padding: 10px;
 }
