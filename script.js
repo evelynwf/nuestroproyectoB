@@ -37,3 +37,8 @@ function validarEmail(email) {
 function validarMensaje(mensaje) {
     return mensaje.length <= 300;
 }
+function validarFormulario() {
+    var nombre = document.getElementById("nombre").value;
+    var email = document.getElementById("email").value;
+    var mensaje = document.getElementById("mensaje").value;
+}
