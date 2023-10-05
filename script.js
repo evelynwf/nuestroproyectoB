@@ -57,10 +57,10 @@ equipo.forEach(function(miembro) {
     divMiembro.classList.add('miembro');
 
     var nombre = document.createElement('h3');
-    nombre.textContent = miembro.nombre;
+    nombre.innerText = miembro.nombre;
 
     var funcion = document.createElement('p');
-    funcion.textContent = miembro.funcion;
+    funcion.innerText = miembro.funcion;
 
     divMiembro.appendChild(nombre);
     divMiembro.appendChild(funcion);
