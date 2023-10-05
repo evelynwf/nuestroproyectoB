@@ -339,3 +339,7 @@ ul.linksImportantes{
   max-width: 40px;
   max-height: 40px;
 }
+
+.arriba{
+  border-radius: 20px;
+}
