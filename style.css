@@ -334,3 +334,7 @@ ul.linksImportantes{
   padding: 5px;
   margin: 10px;
 }
+
+.imagenes{
+  max-width: 40%;
+}
