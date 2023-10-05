@@ -42,3 +42,28 @@ function validarFormulario() {
     var email = document.getElementById("email").value;
     var mensaje = document.getElementById("mensaje").value;
 }
+// Recuperar los datos del localStorage
+var equipoJSON = localStorage.getItem('equipo');
+
+// Convertir el JSON de vuelta a un objeto JavaScript
+var equipo = JSON.parse(equipoJSON);
+
+// Obtener el contenedor donde quieres mostrar los datos del equipo
+var equipoContainer = document.getElementById('equipo-container');
+
+// Recorrer el objeto de datos del equipo y mostrarlos en el DOM
+equipo.forEach(function(miembro) {
+    var divMiembro = document.createElement('div');
+    divMiembro.classList.add('miembro');
+
+    var nombre = document.createElement('h3');
+    nombre.textContent = miembro.nombre;
+
+    var funcion = document.createElement('p');
+    funcion.textContent = miembro.funcion;
+
+    divMiembro.appendChild(nombre);
+    divMiembro.appendChild(funcion);
+
+    equipoContainer.appendChild(divMiembro);
+});
