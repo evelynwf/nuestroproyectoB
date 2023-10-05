@@ -1,54 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página Emprender</title>
-  <link rel="stylesheet" href="style.css">
+
 </head>
 <body class="cursos">
-    <div class="container">
-        <!-- Contenido de la página -->
-  <header>
-    <h1>Bienvenido a Emprender</h1>
-  </header>
-  <main class="cuadro2">
-    <nav>
-            <ul class="linksImportantes">
-              <li><a href="index.html">inicio </a></li>  <!-- ya esta, solo hay que seguir editando - jor -->
-              <li><a href="acercaDe.html">Acerca de Nosotras</a></li> <!-- emi -->
-              <li><a href="novedades.html">novedades</a></li> <!-- jor, ya esta hecho -->
-              <li><a href="financiamiento.html">financiamiento</a></li><!-- lucila --> 
-              <li><a href="cursos.html">cursos</a></li> <!-- evelyn --> 
-        
-            </ul>
-          </nav>
-  <main class="cursos">
-    <p>¡Descubre tu potencial emprendedor y alcanza nuevas metas! La capacitación es la clave para fortalecer tus habilidades, ampliar tu conocimiento y desarrollar una visión sólida para el éxito. Atrévete a crecer, a desafiarte a ti mismo y a enfrentar cada obstáculo con determinación. La formación continua te empoderará para tomar decisiones informadas y convertir tus ideas en realidades exitosas. La preparación es el camino hacia la excelencia, y en cada paso del camino, encontrarás oportunidades emocionantes para crecer, innovar y triunfar. ¡Invierte en ti mismo/a en el mundo del emprendimiento!</p>
-  </main>
-  <ul>
-    <li>
-      <img src="capacitarcursos.jpg" alt= "capacitar" >
-      <a target="_blank" href="https://www.argentina.gob.ar/produccion/capacitar">Capacitar Argentina</a>
-    </li>
-    <li>
-      <img src="img3cursos.jpg" alt="capacitar">
-      <a target="_blank" href="https://cumbre.neuquen.gov.ar/cursos">Cumbre Neuquén Capital</a>
-    </li>
-    <li>
-      <img src="img2cursos.jpg" alt="capacitar">
-      <a target="_blank" href="https://web.muninqn.gov.ar/course/index.php?categoryid=3">Municipalidad de Neuquén</a>
-    </li>
-    <li>
-      <img src="img1cursos.jpg" alt="capacitar">
-    
-      <a target="_blank" href="https://buenosaires.gob.ar/desarrolloeconomico/emprendedores/capacitacion-e-incubadoras/academia-ba-emprende">Academia BA</a></li>
-     
-    </ul>
-   
-  <footer>
-    <p>Derechos de autor &copy; 2023 Grupo B</p>
-    <!-- Agregar iconos de redes sociales -->
-  </footer>
+  <div class="container">
+  
+    <header>
+      <h1>Bienvenido a Emprender</h1>
+    </header>
+    <main class="cuadro2">
+      <ul id="lista-cursos">
+
+      </ul>
+    </main>
+    <footer>
+      <p>Derechos de autor &copy; 2023 Grupo B</p>
+      <!-- Agregar iconos de redes sociales -->
+    </footer>
+  </div>
+
+  <script>
+
+    var datosJSON = {
+      cursos: [
+        {
+          nombre: "Capacitar Argentina",
+          imagen: "capacitarcursos.jpg",
+          enlace: "https://www.argentina.gob.ar/produccion/capacitar"
+        },
+        {
+          nombre: "Cumbre Neuquén Capital",
+          imagen: "img3cursos.jpg",
+          enlace: "https://cumbre.neuquen.gov.ar/cursos"
+        },
+        {
+          nombre: "Municipalidad de Neuquén",
+          imagen: "img2cursos.jpg",
+          enlace: "https://web.muninqn.gov.ar/course/index.php?categoryid=3"
+        },
+        {
+          nombre: "Academia BA",
+          imagen: "img1cursos.jpg",
+          enlace: "https://buenosaires.gob.ar/desarrolloeconomico/emprendedores/capacitacion-e-incubadoras/academia-ba-emprende"
+        }
+      ]
+    };
+
+    function agregarCursosDesdeJSON() {
+      const listaCursos = document.getElementById('lista-cursos');
+      
+      datosJSON.cursos.forEach(curso => {
+        const li = document.createElement('li');
+        const img = document.createElement('img');
+        img.src = curso.imagen;
+        img.alt = curso.nombre;
+        const a = document.createElement('a');
+        a.target = '_blank';
+        a.href = curso.enlace;
+        a.textContent = curso.nombre;
+
+        li.appendChild(img);
+        li.appendChild(a);
+        listaCursos.appendChild(li);
+      });
+    }
+
+    agregarCursosDesdeJSON();
+  </script>
 </body>
 </html>
