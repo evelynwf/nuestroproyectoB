@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="script.js">
     <link rel="icon" href="logoo.ico" type="image/x-icon">
 
-    <link rel="icon" type="image/png" href="Emprendedores.png">
+   
     
   </head>
   <body>
+  
+    
+    <script src="script.js" defer></script>
 <div > 
   <img class="arriba" src="logoo.ico" alt="">
 </div>
@@ -34,7 +37,7 @@
   <!-- agregar un formulario de contacto para los emprendedores  --> 
     <main class="cuadro1">
       <h2>Emprendedores Neuquinos </h2>
-      <p>¡Hola! Somos el grupo B. Somos 4 jóvenes apasionadas emprendedoras de distintos rubros unidas
+      <p class="muchotexto">¡Hola! Somos el grupo B. Somos 4 jóvenes apasionadas emprendedoras de distintos rubros unidas
         para brindarles un espacio dedicado a las emprendedoras. Creemos en el poder de la colaboración 
         y la solidaridad para alcanzar el éxito y nos enorgullecemos de ser una comunidad inclusiva y de 
         apoyo, donde mujeres emprendedoras de diversos sectores y trayectorias pueden conectarse, compartir
@@ -44,19 +47,20 @@
       <h4>aqui abajo les dejamos un formulario en caso de que quieran ponerse en contacto.</h4>
       <section id="formulario">
         <h2>Formulario de Contacto</h2>
-        <form action="procesar_formulario.php" method="POST">
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required>
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
-
-          <input type="submit" value="Enviar">
+        <form action="procesar_formulario.php" method="POST" id="contacto-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+    
+            <input type="submit" value="Enviar">
         </form>
-      </section>
+    </section>
+    
     </main>
   
     <footer>
