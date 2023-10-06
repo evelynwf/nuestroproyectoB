@@ -338,9 +338,7 @@ ul.linksImportantes{
 
 img.arriba{
   transform: translate(-50%, -50%); /* Centra la imagen completamente */
-  align-self: center;
-  align-items: center;
-  align-content: center;
+  
   max-height: 80px;
   max-height: 80px;
   border-radius: 100px;
