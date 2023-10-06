@@ -341,8 +341,8 @@ img.arriba{
   align-self: center;
   align-items: center;
   align-content: center;
-  max-height: 60px;
-  max-height: 60px;
+  max-height: 80px;
+  max-height: 80px;
   border-radius: 100px;
 }
 .testimonios {
