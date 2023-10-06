@@ -1,5 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
-
+document.addEventListener('DOMContentLoaded', function () {
     let datosJSON = {
       cursos: [
         {
@@ -27,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
     function agregarCursosDesdeJSON() {
       const listaCursos = document.getElementById('lista-cursos');
-      
+  
       datosJSON.cursos.forEach(curso => {
         const li = document.createElement('li');
         const img = document.createElement('img');
@@ -37,13 +36,13 @@ document.addEventListener('DOMContentLoaded', function() {
         a.target = '_blank';
         a.href = curso.enlace;
         a.textContent = curso.nombre;
-    
+  
         li.appendChild(img);
         li.appendChild(a);
         listaCursos.appendChild(li);
       });
     }
-    
+  
     agregarCursosDesdeJSON();
   });
   
