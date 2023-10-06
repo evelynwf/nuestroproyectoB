@@ -337,7 +337,7 @@ ul.linksImportantes{
 
 
 img.arriba{
-  margin-left: 200;
+  transform: translate(-50%, -50%); /* Centra la imagen completamente */
   align-self: center;
   align-items: center;
   align-content: center;
