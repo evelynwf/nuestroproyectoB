@@ -337,8 +337,10 @@ ul.linksImportantes{
 
 
 img.arriba{
+  margin-left: 200;
   align-self: center;
   align-items: center;
+  align-content: center;
   max-height: 60px;
   max-height: 60px;
   border-radius: 100px;
