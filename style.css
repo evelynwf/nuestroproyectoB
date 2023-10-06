@@ -1,374 +1,432 @@
-
 /* Estilos base para todos los dispositivos */
 body {
-    font-size: 16px;
+  font-size: 16px;
+}
+
+/* Media query para pantallas pequeñas (celulares) */
+@media (max-width: 767px) {
+  /* Ajustar tamaño de fuente */
+  body {
+    font-size: 14px;
   }
-  
-  /* Media query para pantallas pequeñas (celulares) */
-  @media (max-width: 767px) {
-    /* Ajustar tamaño de fuente */
-    body {
-      font-size: 14px;
-    }
-  
-    /* Ajustar tamaño de imágenes */
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-  
-    /* Ajustar el espaciado */
-    .container {
-      padding: 10px;
-    }
-  
-    /* Reorganizar elementos o ajustar su tamaño si es necesario */
+
+  /* Ajustar tamaño de imágenes */
+  img {
+    max-width: 100%;
+    height: auto;
   }
-  
-  /* Media query para pantallas medianas (tablets) */
-  @media (min-width: 768px) {
-    /* Ajustar tamaño de fuente */
-    body {
-      font-size: 18px;
-    }
-  
-    /* Ajustar tamaño de imágenes */
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-  
-    /* Ajustar el espaciado */
-    .container {
-      padding: 20px;
-    }
+
+  /* Ajustar el espaciado */
+  .container {
+    padding: 10px;
   }
-  
-  /* Media query para pantallas grandes (computadoras) */
-  @media (min-width: 1024px) {
-    /* Ajustar tamaño de fuente */
-    body {
-      font-size: 20px;
-    }
-  
-    /* Ajustar tamaño de imágenes */
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-  
-    
+
+  /* Reorganizar elementos o ajustar su tamaño si es necesario */
+}
+
+/* Media query para pantallas medianas (tablets) */
+@media (min-width: 768px) {
+  /* Ajustar tamaño de fuente */
+  body {
+    font-size: 18px;
   }
-   /* Body */
-   body {
-    font-family: Arial, sans-serif;
-    background-color: #f6fff1;
-    max-width: 1300px;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-image: url("fondddd.jpg");
-    background-size: cover;
-    background-position: center;
+
+  /* Ajustar tamaño de imágenes */
+  img {
+    max-width: 100%;
+    height: auto;
   }
+
+  /* Ajustar el espaciado */
+  .container {
+    padding: 20px;
+  }
+}
+
+/* Media query para pantallas grandes (computadoras) */
+@media (min-width: 1024px) {
+  /* Ajustar tamaño de fuente */
+  body {
+    font-size: 20px;
+  }
+
+  /* Ajustar tamaño de imágenes */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  
+}
+ /* Body */
+ body {
+  font-family: Arial, sans-serif;
+  background-color: #f6fff1;
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-image: url("f1.jpg");
+  background-size: cover;
+  background-position: center;
+}
 /* Encabezado */
 header {
-    text-align: center;
-    background-color: rgba(142, 235, 181, 0.801);
-    padding: 30px;
-    margin: 10px;
-  }
-  
-  /* Barra de navegación */
-  nav{
-    margin: 20px;
-    align-content: center;
-    align-items: center;
-  }
-  nav ul {
-    list-style-type: none;
-  padding: 10px;
-   align-content: center;
-    background-color: rgba(175, 211, 191, 0.521);
-    text-align: center;
-    margin-top:  10px;
-  }
-  nav li {
-    display: inline-block;
-  padding: 5px;
+  text-align: center;
+  background-color: rgba(142, 235, 181, 0.801);
+ padding: 20px;
   margin: 10px;
-  }
+}
+
+/* Barra de navegación */
+nav{
+ 
+  align-content: center;
+  align-items: center;
+}
+nav ul {
+  list-style-type: none;
+padding: 5px;
+ align-content: center;
+  background-color: rgba(175, 211, 191, 0.521);
+  text-align: center;
   
-  nav li a {
-    display: block;
-    text-decoration: none;
-    color: #5c677d;
-    font-family: "Times New Roman", serif;
-   
-  }
+}
+nav li {
+  display: inline-block;
+padding: 0,5px;
+margin: 5px;
+}
+
+nav li a {
+  display: block;
+  text-decoration: none;
+  color: #5c677d;
+  font-family: "Times New Roman", serif;
+ 
+}
+
+nav li a:hover {
+  background-color: #5c677d;
+  color: #ffffffa4;
   
-  nav li a:hover {
-    background-color: #5c677d;
-    color: #ffffffa4;
-    
-  }
-  /* Contenido principal */
+}
+/* Contenido principal */
 main {
-    padding: 10px;
-     text-align: center;
-     margin-top: 20px;
-     background-color: rgba(255, 255, 255, 0.61);
-   }
-   
-   /* Estilos para el formulario */
-section#formulario {
-    background-color: #f9f7f3;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 10px;
-    align-content: center;
-    align-items: center;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    color: #5c677d;
-  }
-  
-  input,
-  textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-bottom: 15px;
-  }
-  
-  input[type="submit"] {
-    background-color: #5c677d;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    padding: 12px 20px;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #405570;
-  }
-  /* botones y letras */
-  h2.h3 {
-    color: #5c677d;
-  }
-  
-  p {
-    color: #333;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-    text-decoration-color: #405570;
-  }
-  
-  li {
-    margin-bottom: 10px;
-  }
-  
-  li a {
-    text-decoration: none;
-    color: #6a9e8a;
-    font-weight: bold;
-  }
-  
-  li a:hover {
-    color: #5c677d;
-  }
- .texinicio{
-    justify-content: space-around;
-    font-size: x-large;
+  padding: 10px;
+   text-align: center;
+   margin-top: 10px;
+ 
  }
-  
-  /* Pie de página */
-  footer {
-    text-align: center;
-    background-color: #dfe0da;
-    padding: 1px;
-    position: sticky;
-    bottom: 0;
-    width: 100%;
-    font-size: 14px;
-    height: 50px;
-    z-index: 1;
-  }
-  /*mision imagenes de mujeres emprendedoras*/
-  /* Estilos para la sección de misión */
-.mision div {
-    width: 100%;
-    padding: 10px;
-  }
-  
-  .mision {
-    display: flex;
-    align-items: center;
-    margin-left: 70px;
-  }
-  
-  .mujeres,
-  .emprendedoras {
-    width: 400px;
-    height: auto;
-    margin: 10px;
-    margin-left: 210px;
-  }
- .nuestro {
-    text-align: center;
-    margin-top: 120px;
-  }
-  
-      .equipo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-      
-    }
-    
-    .miembro {
-        text-align: center;
-        margin: 20px;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        width: 230px;
-        font-size: 21px;
-    }
-    .miembros{
-      text-align: center;
-        margin: 20px;
-        padding: 15px;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        width: 240px;
-        font-size: 18px;
-    }
-     
-    .nombres {
-       margin: 10px 0;
-       }
-  /*pagina de cursos y sus estilos particulares */
-  body.cursos ul {
-    max-width: 1300px;
-   
-padding: 10px;
-  }
-  
-  li {
-    border-radius: 5px;
-    flex: 1;
-    background-color: rgba(255, 255, 255, 0.9);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5px;
-    margin: 25px;
-  }
-  
-  li img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
-  
-  li p {
-    margin-bottom: 5px;
-  }
-  
-  li:not(:last-child) {
-    margin-right: 10px;
-  }
-  
-  li a {
-    text-decoration: none;
-    color: #6a9e8a;
-    font-weight: bold;
-  }
-  
-  li a:hover {
-    color: #5c677d;
-  }
-  /*logo*/
-  .logo {
-    text-align: center; /* Centra el logo horizontalmente */
-  border-radius: 13px; 
-
-  }
-  
-  .logo img {
-    align-items: center;
-   max-width: 170px;
-    border-radius: 100px; 
-    border-image: round;
-  }
-  
-  
-  .contacto img {
-    padding: 5px;
-    margin: 5px;
-  max-width: 20px;
-  max-height: 20px;
-
-  }
-  .error {
-    color: red;
-}
-.linksImportantes li{
- margin: 25px;
- padding: 10px;
-}
-
-ul.linksImportantes{
-  padding: 5px;
+ 
+ /* Estilos para el formulario */
+section#formulario {
+  background-color: #f9f7f3;
+  padding: 20px;
+  border-radius: 8px;
   margin: 10px;
+  align-content: center;
+  align-items: center;
 }
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #5c677d;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+input[type="submit"] {
+  background-color: #5c677d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 12px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #405570;
+}
+/* botones y letras */
+h2.h3 {
+  color: #5c677d;
+}
+
+p {
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-decoration-color: #405570;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+li a {
+  text-decoration: none;
+  color: #6a9e8a;
+  font-weight: bold;
+}
+
+li a:hover {
+  color: #5c677d;
+}
+.texinicio{
+  justify-content: space-around;
+  font-size: x-large;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  background-color: #dfe0da;
+  padding: 1px;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+  height: 50px;
+  z-index: 1;
+}
+/*mision imagenes de mujeres emprendedoras*/
+/* Estilos para la sección de misión */
+.mision div {
+  width: 100%;
+  padding: 10px;
+}
+
+.mision {
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+}
+
+.mujeres,
+.emprendedoras {
+  width: 400px;
+  height: auto;
+  margin: 10px;
+  margin-left: 210px;
+}
+.nuestro {
+  text-align: center;
+  margin-top: 120px;
+}
+
+    .equipo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    
+  }
+  
+  .miembro {
+      text-align: center;
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      width: 230px;
+      font-size: 21px;
+  }
+  .miembros{
+    text-align: center;
+      margin: 20px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      width: 240px;
+      font-size: 18px;
+  }
+   
+  .nombres {
+     margin: 10px 0;
+     }
+/*pagina de cursos y sus estilos particulares */
+body.cursos ul {
+  max-width: 1300px;
+ 
+padding: 10px;
+}
+
+li {
+  border-radius: 5px;
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  
+}
+
+li img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+li p {
+  margin-bottom: 5px;
+}
+
+li:not(:last-child) {
+  margin-right: 10px;
+}
+
+li a {
+  text-decoration: none;
+  color: #6a9e8a;
+  font-weight: bold;
+}
+
+li a:hover {
+  color: #5c677d;
+}
+/*logo*/
+.logo {
+  text-align: center; /* Centra el logo horizontalmente */
+border-radius: 13px; 
+
+}
+
+.logo img {
+  align-items: center;
+ max-width: 170px;
+  border-radius: 100px; 
+  border-image: round;
+}
+
+
+.contacto img {
+  padding: 5px;
+  margin: 5px;
+max-width: 20px;
+max-height: 20px;
+
+}
+.error {
+  color: red;
+}
+
 
 
 img.arriba{
-  transform: translate(-50%, -50%); /* Centra la imagen completamente */
-  
-  max-height: 80px;
-  max-height: 80px;
-  border-radius: 100px;
+
+margin-top: 20px;
+margin-left: 50%;
+max-height: 100px;
+max-height: 130px;
+border-radius: 130px;
 }
 .testimonios {
-  text-align: center;
-  padding: 20px;
+text-align: center;
+padding: 20px;
 }
 
 .testimonio {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
+display: flex;
+justify-content: space-around;
+margin-top: 20px;
 }
 
 .testimonio-item {
-  width: 30%;
+width: 30%;
 }
 
 .testimonio-item img {
-  width: 100px;
-  border-radius: 50%; /* Esto redondeará las imágenes */
+width: 100px;
+border-radius: 50%; /* Esto redondeará las imágenes */
 }
 
 .testimonio-item h3 {
-  margin-top: 10px;
-  font-size: 1.2em;
+margin-top: 10px;
+font-size: 1.2em;
 }
 
 .testimonio-item p {
-  margin-top: 10px;
-  font-style: italic;
+margin-top: 10px;
+font-style: italic;
+}
+/* Estilos para la sección de suscripción */
+#suscripcion {
+background-color: #f9f7f3;
+padding: 20px;
+border-radius: 8px;
+margin: 20px 0;
+text-align: center;
+}
+
+#suscripcion h2 {
+color: #5c677d;
+}
+
+#suscripcion-form {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 15px;
+}
+
+#suscripcion-form label {
+margin-bottom: 10px;
+color: #5c677d;
+}
+
+#suscripcion-form input[type="email"] {
+width: 100%;
+padding: 10px;
+border: 1px solid #ddd;
+border-radius: 4px;
+margin-bottom: 15px;
+}
+
+#suscripcion-form input[type="submit"] {
+background-color: #5c677d;
+color: #fff;
+border: none;
+cursor: pointer;
+padding: 12px 20px;
+border-radius: 4px;
+transition: background-color 0.3s;
+}
+
+#suscripcion-form input[type="submit"]:hover {
+background-color: #405570;
+}
+
+/* Estilos para las alertas */
+.alerta {
+background-color: #f44336;
+color: white;
+padding: 14px 20px;
+border-radius: 4px;
+margin-top: 20px;
+text-align: center;
+display: none;
+}
+
+/* Estilos para mensajes de éxito */
+.mensaje-exito {
+background-color: #4caf50;
+}
+.muchotexto{
+background-color: rgba(198, 223, 198, 0.37);
+padding: 15px;
 }
