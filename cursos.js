@@ -47,3 +47,38 @@ document.addEventListener('DOMContentLoaded', function () {
 
   agregarCursosDesdeJSON();
 }); 
+
+function agregarCursosDesdeJSON() {
+  const listaCursos = document.getElementById('lista-cursos');
+
+  if (listaCursos) {
+    datosJSON.cursos.forEach(curso => {
+      const li = document.createElement('li');
+      const img = document.createElement('img');
+      img.src = curso.imagen;
+      img.alt = curso.nombre;
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.href = curso.enlace;
+   
+      a.textContent = `${curso.nombre} - Visitar sitio`;
+
+      li.appendChild(img);
+      li.appendChild(a);
+      listaCursos.appendChild(li);
+    });
+  }
+}
+
+if (datosJSON.cursos.length > 0) {
+  agregarCursosDesdeJSON();
+} else {
+  const listaCursos = document.getElementById('lista-cursos');
+  listaCursos.innerHTML = 'No hay cursos disponibles en este momento.';
+}
+
+datosJSON.cursos.forEach(curso => {
+});
+
+const miFuncionFlecha = () => {
+};
