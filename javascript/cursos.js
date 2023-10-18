@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     cursos: [
       {
         nombre: "Capacitar Argentina",
-        imagen: "capacitarcursos.jpg",
+        imagen: "proyecto/imagenes/capacitarcursos.jpg",
         enlace: "https://www.argentina.gob.ar/produccion/capacitar"
       },
       {
