@@ -3,22 +3,22 @@ document.addEventListener('DOMContentLoaded', function () {
     cursos: [
       {
         nombre: "Capacitar Argentina",
-        imagen: "proyecto/imagenes/capacitarcursos.jpg",
+        imagen: "imagenes/capacitarcursos.jpg",
         enlace: "https://www.argentina.gob.ar/produccion/capacitar"
       },
       {
         nombre: "Cumbre Neuquén Capital",
-        imagen: "proyecto/imagenes/img3cursos.jpg",
+        imagen: "imagenes/img3cursos.jpg",
         enlace: "https://cumbre.neuquen.gov.ar/cursos"
       },
       {
         nombre: "Municipalidad de Neuquén",
-        imagen: "proyecto/imagenes/img2cursos.jpg",
+        imagen: "imagenes/img2cursos.jpg",
         enlace: "https://web.muninqn.gov.ar/course/index.php?categoryid=3"
       },
       {
         nombre: "Academia BA",
-        imagen: "proyecto/imagenes/img1cursos.jpg",
+        imagen: "imagenes/img1cursos.jpg",
         enlace: "https://buenosaires.gob.ar/desarrolloeconomico/emprendedores/capacitacion-e-incubadoras/academia-ba-emprende"
       }
     ]
