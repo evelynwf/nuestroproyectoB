@@ -8,17 +8,17 @@ document.addEventListener('DOMContentLoaded', function () {
       },
       {
         nombre: "Cumbre Neuquén Capital",
-        imagen: "img3cursos.jpg",
+        imagen: "proyecto/imagenes/img3cursos.jpg",
         enlace: "https://cumbre.neuquen.gov.ar/cursos"
       },
       {
         nombre: "Municipalidad de Neuquén",
-        imagen: "img2cursos.jpg",
+        imagen: "proyecto/imagenes/img2cursos.jpg",
         enlace: "https://web.muninqn.gov.ar/course/index.php?categoryid=3"
       },
       {
         nombre: "Academia BA",
-        imagen: "img1cursos.jpg",
+        imagen: "proyecto/imagenes/img1cursos.jpg",
         enlace: "https://buenosaires.gob.ar/desarrolloeconomico/emprendedores/capacitacion-e-incubadoras/academia-ba-emprende"
       }
     ]
